@@ -1,0 +1,1241 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/seema-giri/ontologies/2020/4/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/seema-giri/ontologies/2020/4/untitled-ontology-3"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:iot-lite="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/seema-giri/ontologies/2020/4/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+    
+
+
+    <!-- http://sensormeasurement.appspot.com/m3#OWLObjectPropertyImpl_22de79ed_50f3_4984_a405_dffb2a2f3a9e -->
+
+    <owl:ObjectProperty rdf:about="http://sensormeasurement.appspot.com/m3#OWLObjectPropertyImpl_22de79ed_50f3_4984_a405_dffb2a2f3a9e">
+        <rdfs:domain rdf:resource="http://sensormeasurement.appspot.com/m3#Measurement"/>
+        <rdfs:range rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">hasUnit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensormeasurement.appspot.com/m3#OWLObjectPropertyImpl_56b2aebc_7f5f_4f50_b12a_b4cfff48ea45 -->
+
+    <owl:ObjectProperty rdf:about="http://sensormeasurement.appspot.com/m3#OWLObjectPropertyImpl_56b2aebc_7f5f_4f50_b12a_b4cfff48ea45">
+        <rdfs:domain rdf:resource="http://sensormeasurement.appspot.com/m3#Measurement"/>
+        <rdfs:range rdf:resource="http://sensormeasurement.appspot.com/m3#Value"/>
+        <rdfs:comment xml:lang="en">This property is used to describe the value of a measurement (e.g, 39).</rdfs:comment>
+        <rdfs:label xml:lang="en">hasValue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#controlledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#controlledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Virus"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#PesticideType"/>
+        <rdfs:label xml:lang="en">controlledBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasApplicationMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasApplicationMethod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#FertilizerType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#ApplicationMethod"/>
+        <rdfs:label xml:lang="en">hasApplicationMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasCrop -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasCrop">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#sownAt"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#Crop"/>
+        <rdfs:label xml:lang="en">hasCrop</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasCropPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasCropPhase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropPhase"/>
+        <rdfs:label xml:lang="en">hasCropPhase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasCropProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasCropProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Crop"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropProcess"/>
+        <rdfs:label xml:lang="en">hasCropProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasFieldProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasFieldProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#FieldProcess"/>
+        <rdfs:label xml:lang="en">hasFieldProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasGrowthProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasGrowthProblem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropGrowthProblems"/>
+        <rdfs:label xml:lang="en">hasGrowthProblem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasProductProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasProductProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Product"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#ProductProcess"/>
+        <rdfs:label xml:lang="en">hasProductProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasSoilCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasSoilCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#SoilCondition"/>
+        <rdfs:label xml:lang="en">hasSoilCondition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasSoilType -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasSoilType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#SoilType"/>
+        <rdfs:label xml:lang="en">hasSoilType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasSymptom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropGrowthProblems"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#Symptom"/>
+        <rdfs:label xml:lang="en">hasSymptom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasTimeDuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasTimeDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasTimeDuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#hasWeatherCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#hasWeatherCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#WeatherCondition"/>
+        <rdfs:label xml:lang="en">hasWeatherCondition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#isEffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#isEffectedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#Virus"/>
+        <rdfs:label xml:lang="en">isEffectedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#owned -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#owned">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#ownedBy"/>
+        <rdfs:label xml:lang="en">owned</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#ownedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#ownedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#Field"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914"/>
+        <rdfs:label xml:lang="en">ownedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#sownAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#sownAt">
+        <rdfs:label xml:lang="en">sownAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#usesFertilizerType -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#usesFertilizerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#FertilizerType"/>
+        <rdfs:label xml:lang="en">usesFertilizerType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#usesPesticideType -->
+
+    <owl:ObjectProperty rdf:about="http://www.linkedsensor.in/ontology/agrion#usesPesticideType">
+        <rdfs:domain rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropType"/>
+        <rdfs:range rdf:resource="http://www.linkedsensor.in/ontology/agrion#PesticideType"/>
+        <rdfs:label xml:lang="en">usesPesticideType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitType -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#unitType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#numericDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#numericDuration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Device -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#SensingDevice -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Sensor -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#System -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+    
+
+
+    <!-- http://purl.org/NET/ssnx/qu/qu#QuantityKind -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnx/qu/qu#QuantityKind">
+        <rdfs:comment>A QuantityKind is an abstract classifier that represents the concept of kind of quantity that is defined as aspect common to mutually comparable quantities. A QuantityKind represents the essence of a quantity without any numerical value or unit. Quantities of the same kind within a given system of quantities have the same quantity dimension. However, quantities of the same dimension are not necessarily of the same kind.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnx/qu/qu#Unit -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnx/qu/qu#Unit">
+        <owl:equivalentClass rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Agriculture -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Agriculture"/>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#AirHumiditySensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirHumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#HumiditySensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Sensor used to measure air humidity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Air Humidity Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#AirTemperature -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirTemperature">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Temperature"/>
+        <rdfs:comment xml:lang="en">The temperature of the air that would be indicated by a thermometer exposed to the air at a location sheltered from direct solar radiation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Air Temperature, Weather Temperature, Ambient Temperature</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://openiot.eu/ontology/ns/AirTemperature"/>
+        <rdfs:seeAlso rdf:resource="http://paul.staroch.name/thesis/SmartHomeWeather.owl#Temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#AirThermometer -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirThermometer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Thermometer"/>
+        <rdfs:comment xml:lang="en">Device to measure the Air temperature of either indoor or outdoor atmosphere.</rdfs:comment>
+        <rdfs:label xml:lang="en">Air Thermometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#BuildingTemperature -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#BuildingTemperature">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Temperature"/>
+        <rdfs:comment xml:lang="en">Measure of building or room temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Building/Room Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#CO2 -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#CO2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+        <rdfs:comment xml:lang="en">Carbon Dioxide (CO2) measure in the atmosphere.</rdfs:comment>
+        <rdfs:label xml:lang="en">Carbon Dioxide (CO2) Quantity Kind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#CO2Sensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#CO2Sensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Agriculture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Carbon Dioxide (CO2) Sensor used to measure level of CO2 in the atmosphere.</rdfs:comment>
+        <rdfs:label xml:lang="en">Carbon Dioxide (CO2) Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Degree -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Degree">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#DegreeCelsius -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#DegreeCelsius">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Degree"/>
+        <rdfs:comment xml:lang="en">A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.</rdfs:comment>
+        <rdfs:label xml:lang="en">Degree Celsius</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeCelsius"/>
+        <rdfs:seeAlso rdf:resource="http://purl.oclc.org/NET/ssnx/qu/unit#degreeCelsius"/>
+        <rdfs:seeAlso rdf:resource="http://sweet.jpl.nasa.gov/ontology/units.owl#degreeC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Environment -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Environment"/>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#HumiditySensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#OWLClassImpl_0460fa4b_7b69_4027_95a7_f8f3baa5d7a5 -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#OWLClassImpl_0460fa4b_7b69_4027_95a7_f8f3baa5d7a5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+        <rdfs:comment xml:lang="en">It is the amount in or for every hundred.</rdfs:comment>
+        <rdfs:label xml:lang="en">Percent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.qudt.org/qudt/owl/1.0.0/unit.owl#Percent"/>
+        <rdfs:seeAlso rdf:resource="http://sweet.jpl.nasa.gov/ontology/units.owl#percent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#OWLClassImpl_cd2e0328_8e0b_4055_854f_c66a4d420925 -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#OWLClassImpl_cd2e0328_8e0b_4055_854f_c66a4d420925">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+        <rdfs:comment xml:lang="en">It is the measure of all the salts dissolved in water.</rdfs:comment>
+        <rdfs:label xml:lang="en">Salinity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#PPM -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#PPM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+        <rdfs:comment xml:lang="en">It describes the concentration of something in water or soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">PPM (parts per million)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SaltMeter -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SaltMeter">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Device use to detect salinity of water.</rdfs:comment>
+        <rdfs:label xml:lang="en">Salt Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SiemensPerMetre -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SiemensPerMetre">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+        <rdfs:comment xml:lang="en">Conductivity is measured in Siemens per metre (S/m).</rdfs:comment>
+        <rdfs:label xml:lang="en">Siemens Per Metre, Siemens Per Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SoilHumidity -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SoilHumidity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+        <rdfs:comment xml:lang="en">It is the quantity of water contained in a material, such as soil. </rdfs:comment>
+        <rdfs:label xml:lang="en">Soil Humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#HumiditySensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Agriculture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Soil Humidity sensor, Soil moisture, Hygrometer are an instrument used for measuring the soil moisture or soil humidity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil Humidity Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SoilTemperature -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SoilTemperature">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Temperature"/>
+        <rdfs:comment xml:lang="en">Soil temperature is the bulk temperature of the soil, not the surface (skin) temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SoilThermometer -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SoilThermometer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Thermometer"/>
+        <rdfs:comment xml:lang="en">This sensor reports Soil temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil Thermometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SolarRadiation -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SolarRadiation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+        <rdfs:comment xml:lang="en">It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia).</rdfs:comment>
+        <rdfs:label xml:lang="en">Solar Radiation Measurement, PAR Measurement (Photosynthetically Active Radiation)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Agriculture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/iot/vocab/m3-lite#Weather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Device used to detect Solar Radiation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Solar Radiation Sensor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.oclc.org/NET/ssnx/meteo/aws#RadiationSensor"/>
+        <rdfs:seeAlso rdf:resource="http://spitfire-project.eu/ontology/ns/Light"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Temperature -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Temperature">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Thermometer -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Thermometer">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#WaterTemperature -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#WaterTemperature">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Temperature"/>
+        <rdfs:comment xml:lang="en">Sea surface temperature (SST) is the water temperature close to the ocean&apos;s surface.</rdfs:comment>
+        <rdfs:label xml:lang="en">Water Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#WattPerSquareMetre -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#WattPerSquareMetre">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://sensormeasurement.appspot.com/m3#Unit"/>
+        <rdfs:comment xml:lang="en">It is the SI unit for radiative and other energy fluxes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Watt Per Square Metre, Watt Per Square Meter</rdfs:label>
+        <rdfs:seeAlso>http://purl.oclc.org/NET/ssnx/qu/unit#wattPerSquareMetre</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Weather -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Weather">
+        <owl:equivalentClass rdf:resource="http://www.linkedsensor.in/ontology/agrion#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensormeasurement.appspot.com/m3#Measurement -->
+
+    <owl:Class rdf:about="http://sensormeasurement.appspot.com/m3#Measurement"/>
+    
+
+
+    <!-- http://sensormeasurement.appspot.com/m3#Unit -->
+
+    <owl:Class rdf:about="http://sensormeasurement.appspot.com/m3#Unit"/>
+    
+
+
+    <!-- http://sensormeasurement.appspot.com/m3#Value -->
+
+    <owl:Class rdf:about="http://sensormeasurement.appspot.com/m3#Value"/>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#ApplicationMethod -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#ApplicationMethod">
+        <rdfs:label xml:lang="en">ApplicationMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Condition -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Condition">
+        <rdfs:comment>Condition defines the state of anything.</rdfs:comment>
+        <rdfs:label xml:lang="en">Condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Crop -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Crop">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasCropProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Crop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#CropGrowth -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#CropGrowth">
+        <rdfs:label xml:lang="en">CropGrowth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#CropGrowthProblems -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#CropGrowthProblems">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropGrowth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CropGrowthProblems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#CropPhase -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#CropPhase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasTimeDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CropPhase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#CropProcess -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#CropProcess">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Process"/>
+        <rdfs:label xml:lang="en">CropProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#CropType -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#CropType">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Crop"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasCropPhase"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropPhase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasGrowthProblem"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#CropGrowthProblems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#isEffectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#Virus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#usesFertilizerType"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#FertilizerType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#usesPesticideType"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#PesticideType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CropType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Fertilizer -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Fertilizer">
+        <rdfs:label xml:lang="en">Fertilizer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#FertilizerType -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#FertilizerType">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Fertilizer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasApplicationMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#ApplicationMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">FertilizerType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Field -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Field">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasFieldProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#FieldProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasSoilCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#SoilCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasSoilType"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#SoilType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasWeatherCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#WeatherCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#ownedBy"/>
+                <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasCrop"/>
+                <owl:allValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#Crop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>In agriculture, a field is an area of land, enclosed or otherwise, used for agricultural purposes such as cultivating crops or as a paddock or other enclosure for livestock. A field may also be an area left to lie fallow or as arable land.</rdfs:comment>
+        <rdfs:label xml:lang="en">Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#FieldProcess -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#FieldProcess">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Process"/>
+        <rdfs:comment>A series of actions or steps taken for the field (farm) in order to achieve a desired output.</rdfs:comment>
+        <rdfs:label xml:lang="en">FieldProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Location -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Location">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Pesticide -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Pesticide">
+        <rdfs:label xml:lang="en">Pesticide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#PesticideType -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#PesticideType">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Pesticide"/>
+        <rdfs:label xml:lang="en">PesticideType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Process -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Process">
+        <rdfs:comment>A series of actions or steps taken in order to achieve a desired output.</rdfs:comment>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Product -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Product">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#hasProductProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#ProductProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An article or substance that is manufactured, cultivated or refined for sale.</rdfs:comment>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#ProductProcess -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#ProductProcess">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Process"/>
+        <rdfs:label xml:lang="en">ProductProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Soil -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Soil">
+        <rdfs:comment>The upper layer of earth in which plants grow, a black or dark brown material typically consisting of a mixture of organic remains, clay, and rock particles.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#SoilCondition -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#SoilCondition">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Condition"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Soil"/>
+        <owl:disjointWith rdf:resource="http://www.linkedsensor.in/ontology/agrion#SoilType"/>
+        <owl:disjointWith rdf:resource="http://www.linkedsensor.in/ontology/agrion#WeatherCondition"/>
+        <rdfs:comment>The soil condition denotated by moisture level.</rdfs:comment>
+        <rdfs:label xml:lang="en">SoilCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#SoilType -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#SoilType">
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Soil"/>
+        <rdfs:comment>The soil is basically classified into six types:
+Loam
+Clay
+Sand
+Silt
+Peat
+Chalk</rdfs:comment>
+        <rdfs:label xml:lang="en">SoilType</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.newsmax.com/FastFeatures/farmers-types-soil-grow/2017/08/17/id/808180/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Soil_Salinity -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Soil_Salinity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#OWLClassImpl_cd2e0328_8e0b_4055_854f_c66a4d420925"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Symptom -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Symptom">
+        <rdfs:label xml:lang="en">Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Virus -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Virus">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.linkedsensor.in/ontology/agrion#controlledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.linkedsensor.in/ontology/agrion#PesticideType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#Weather -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#Weather">
+        <rdfs:label xml:lang="en">Weather</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.linkedsensor.in/ontology/agrion#WeatherCondition -->
+
+    <owl:Class rdf:about="http://www.linkedsensor.in/ontology/agrion#WeatherCondition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Weather"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Condition"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkedsensor.in/ontology/agrion#Weather"/>
+        <rdfs:comment>The state of the atmosphere at a particular place and time as regards temprature, humidity, cloudiness, dryness, sunshine, wind velocity, precipitation, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">WeatherCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <iot-lite:altRelative></iot-lite:altRelative>
+        <iot-lite:relativeLocation></iot-lite:relativeLocation>
+        <wgs84_pos:alt></wgs84_pos:alt>
+        <wgs84_pos:lat></wgs84_pos:lat>
+        <wgs84_pos:long></wgs84_pos:long>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Duration -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Duration of a temporal extent expressed as a number scaled by a temporal unit</rdfs:comment>
+        <rdfs:label xml:lang="en">Time duration</rdfs:label>
+        <skos:definition xml:lang="en">Duration of a temporal extent expressed as a number scaled by a temporal unit</skos:definition>
+        <skos:note xml:lang="en">Alternative to time:DurationDescription to support description of a temporal duration other than using a calendar/clock system.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalDuration -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalDuration"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914 -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OWLClassImpl_47b8c0e5_f64a_492e_8e76_53eace624914">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:comment>A person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:label xml:lang="en">foaf:Person</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.linkedsensor.in/ontology/agrion#CropProblem">
+        <rdfs:label xml:lang="en">CropProblem</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
